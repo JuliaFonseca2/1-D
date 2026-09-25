@@ -16,10 +16,6 @@
     card-box : 
       border: 1px solid red;
     }
-  .h2 {
-      text-align: center;
-    }
-
 </head>
 
 <!-- ERRO 05: Atributo do body escrito errado ("backgroundcolor" sem hífen) -->
@@ -44,10 +40,10 @@
 
   </header>
 
-  <!-- ERRO 12: Uso da tag obsoleta <center> (descontinuada no HTML5); CORRIGIDO POR :FELLIPECHINCHILLA-->
- 
+  <!-- ERRO 12: Uso da tag obsoleta <center> (descontinuada no HTML5) -->
+  <center>
     <h2>Área do Aluno</h2>
-
+  </center>
 
   <main style="max-width: 800px; margin: 0 auto; padding: 20px;">
 
@@ -91,7 +87,8 @@
 
       <!-- ERRO 24: Lista não ordenada <ul> contendo uma tag <p> direta sem ser filha de um <li> -->
       <ul>
-        <p>Regras do projeto:</p>
+    <li>
+        <p>Regras do projeto:</p> </li>
         <li>Trabalhar em equipe</li>
         <!-- ERRO 25: Atributo 'style' dentro do <li> sem o sinal de igual (style"color:green;") -->
         <li style"color: green;">Manter o código limpo</li>
